@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抽签</title>
+    <link rel="stylesheet" href="style.scss">
+</head>
+
+<body>
+    <div class="box">
+        <h1 class="title">抽签</h1>
+        <div class="box__name">
+            <div class="_name_box">
+                <input type="text" id="lotName" placeholder="签名" class="_name">
+            </div>
+        </div>
+        <div class="box_btn">
+            <div class="btn_box">
+                <button onclick="createLots()">新建签</button>
+            </div>
+            <div class="btn_box">
+                <button onclick="drawLot()">抽签</button>
+            </div>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <div class="result" onclick="back()">
+        <div class="result_box">
+            <h1 class="result_box_title">抽签的结果</h1>
+            <div class="result_box_result">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
